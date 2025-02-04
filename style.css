@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow Condensed", serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0e0e0e;
+  color: white;
+}
+
+.container {
+  display: flex;
+  width: 65vw;
+  height: auto;
+  background-color: #000000;
+}
+
+.first {
+  width: 17vw;
+}
+
+.logo {
+  width: 6vh;
+  height: auto;
+  padding-left: 0.5rem;
+}
+
+.sidebar {
+  width: 250px;
+  padding-left: 20px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-size: 20px;
+}
+
+button {
+  width: 11vw;
+  padding: 10px;
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: #4a99e9;
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+
+.second {
+  width: 28vw;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+.head {
+  display: flex;
+  margin-left: 10px;
+}
+
+.head .material-symbols-outlined {
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2px;
+}
+
+.name .material-symbols-outlined {
+  font-size: 0.8rem;
+  position: relative;
+  top: -7px;
+  color: yellow;
+}
+
+.profile-name{
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  font-size: 0.8rem;
+  padding-left: 1rem;
+}
+
+p {
+  font-size: 0.6rem;
+  margin-left: 0.4rem;
+  color: #898181;
+}
+
+.cover_pic {
+  margin: 0;
+}
+
+.cover_pic img {
+  width: 28vw;
+  aspect-ratio: 2/1;
+}
+
+.logo2{
+  position: absolute;
+  top: 22%;
+  width: 8vw;
+}
+
+.side{
+  display: flex;
+  gap: 0.7rem;
+  position: absolute;
+  top: 34%;
+  left: 52%;
+}
+
+.side .material-symbols-outlined{
+  font-size: 0.8rem;
+  border: 1px solid white;
+  padding: 2px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+ .side h6{
+  width: 5vw;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid white;
+  border-radius: 1rem;
+}
+
+.name1{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.profile-name1{
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  font-size: 0.7rem;
+  padding-left: 5px;
+}
+
+h4{
+  font-size: 12px;
+  font-weight: 300;
+  padding: 0.5rem 0 0 0.8rem;
+}
+
+.data{
+  display: flex;
+  margin: 10px;
+}
+
+.data ul{
+  display: grid;
+  grid-template-columns: repeat(2,1);
+}
+
+.data ul li{
+  font-size: 10px;
+
+}
+
+.data ul li span{
+  font-size: 14px;
+
+}
