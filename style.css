@@ -83,7 +83,7 @@ button {
   margin-top: 10px;
 }
 
-.name{
+.name {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,7 +97,7 @@ button {
   color: yellow;
 }
 
-.profile-name{
+.profile-name {
   display: flex;
   flex-direction: row;
   gap: 3px;
@@ -120,13 +120,13 @@ p {
   aspect-ratio: 2/1;
 }
 
-.logo2{
+.logo2 {
   position: absolute;
   top: 22%;
   width: 8vw;
 }
 
-.side{
+.side {
   display: flex;
   gap: 0.7rem;
   position: absolute;
@@ -134,7 +134,7 @@ p {
   left: 52%;
 }
 
-.side .material-symbols-outlined{
+.side .material-symbols-outlined {
   font-size: 0.8rem;
   border: 1px solid white;
   padding: 2px;
@@ -142,7 +142,7 @@ p {
   cursor: pointer;
 }
 
- .side h6{
+.side h6 {
   width: 5vw;
   text-align: center;
   font-size: 12px;
@@ -150,42 +150,162 @@ p {
   border-radius: 1rem;
 }
 
-.name1{
-  display: flex;
-  flex-direction: column;
-  margin: 5px;
+.profile-container {
+  width: 310px;
+  background-color: black;
+  padding: 8px;
+  border-radius: 10px;
 }
 
-.profile-name1{
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.verified-badge {
+  width: 14px;
+  height: 14px;
+}
+
+.username {
+  color: gray;
+  font-size: 10px;
+}
+
+.bio {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.profile-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  color: gray;
+  font-size: 12px;
+}
+
+.profile-info span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.profile-info a {
+  color: #1d9bf0;
+  text-decoration: none;
+}
+
+.profile-info a:hover {
+  text-decoration: underline;
+}
+
+.follow-stats {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.follow-stats span {
+  font-weight: bold;
+}
+
+.followers-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 12px;
+  color: gray;
+}
+
+.followers-info img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.header {
+  border-bottom: 1px solid gray;
+}
+
+.header ul {
   display: flex;
   flex-direction: row;
-  gap: 3px;
-  font-size: 0.7rem;
-  padding-left: 5px;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-h4{
+.header ul li {
+  position: relative;
+  display: inline-block;
+  padding: 10px 0;
   font-size: 12px;
-  font-weight: 300;
-  padding: 0.5rem 0 0 0.8rem;
 }
 
-.data{
+.header ul li:active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 4px; 
+  background: blue;
+  border-radius: 3px; 
+  transition: all 0.3s ease;
+}
+
+.content-logo{
   display: flex;
-  margin: 10px;
+  flex-direction: row;
+  align-items: start;
+  margin-top: 5px;
 }
 
-.data ul{
-  display: grid;
-  grid-template-columns: repeat(2,1);
+.logo3{
+  width: 2vw;
+  height: auto;
+  padding: 4px;
 }
 
-.data ul li{
-  font-size: 10px;
-
+.profile-header1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-size: .7rem;
+  font-weight: bold;
 }
 
-.data ul li span{
-  font-size: 14px;
+.verified-badge1 {
+  width: 12px;
+  height: 12px;
+}
 
+.username1 {
+  color: gray;
+  font-size: 8px;
+}
+
+.para{
+  position: absolute;
+  top: 81%;
+  left: 37.5%;
+  width: 23vw;
+  height: auto;
+}
+
+.para span{
+  font-size: 12px;
+}
+
+
+.third{
+  margin: 5px;
 }
