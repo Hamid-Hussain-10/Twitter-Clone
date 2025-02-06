@@ -29,12 +29,12 @@ body {
 .logo {
   width: 6vh;
   height: auto;
-  padding-left: 0.5rem;
+  padding-left: 0.9rem;
 }
 
 .sidebar {
   width: 250px;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 ul {
@@ -53,13 +53,13 @@ li {
 }
 
 .material-symbols-outlined {
-  font-size: 20px;
+  font-size: 18px;
 }
 
-button {
+.btn button {
   width: 11vw;
-  padding: 10px;
-  margin: 1rem;
+  padding: 8px;
+  margin: 1.5rem;
   border-radius: 1rem;
   background-color: #4a99e9;
   color: white;
@@ -75,40 +75,45 @@ button {
 
 .head {
   display: flex;
-  margin-left: 10px;
+  align-items: center;
+  gap: 14px;
+  padding: 5px 8px;
+  background: black;
+  color: white;
+  border-bottom: 1px solid #2f3336;
 }
 
 .head .material-symbols-outlined {
-  font-size: 0.8rem;
-  margin-top: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
 }
 
 .name {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 2px;
-}
-
-.name .material-symbols-outlined {
-  font-size: 0.8rem;
-  position: relative;
-  top: -7px;
-  color: yellow;
 }
 
 .profile-name {
   display: flex;
-  flex-direction: row;
-  gap: 3px;
-  font-size: 0.8rem;
-  padding-left: 1rem;
+  align-items: center;
+  gap: 2px;
 }
 
-p {
-  font-size: 0.6rem;
-  margin-left: 0.4rem;
-  color: #898181;
+.profile-name h3 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.profile-name .material-symbols-outlined {
+  font-size: 14px;
+  color: #FFD700;
+}
+
+h6 {
+  font-size: 10px;
+  color: gray;
+  margin-left: 12px;
 }
 
 .cover_pic {
@@ -131,7 +136,7 @@ p {
   gap: 0.7rem;
   position: absolute;
   top: 34%;
-  left: 52%;
+  left: 51%;
 }
 
 .side .material-symbols-outlined {
@@ -146,8 +151,10 @@ p {
   width: 5vw;
   text-align: center;
   font-size: 12px;
+  color: white;
   border: 1px solid white;
   border-radius: 1rem;
+  cursor: pointer;
 }
 
 .profile-container {
@@ -255,20 +262,20 @@ p {
   left: 0;
   bottom: -2px;
   width: 100%;
-  height: 4px; 
+  height: 4px;
   background: blue;
-  border-radius: 3px; 
+  border-radius: 3px;
   transition: all 0.3s ease;
 }
 
-.content-logo{
+.content-logo {
   display: flex;
   flex-direction: row;
   align-items: start;
   margin-top: 5px;
 }
 
-.logo3{
+.logo3 {
   width: 2vw;
   height: auto;
   padding: 4px;
@@ -279,7 +286,7 @@ p {
   flex-direction: row;
   align-items: center;
   gap: 5px;
-  font-size: .7rem;
+  font-size: 0.7rem;
   font-weight: bold;
 }
 
@@ -293,19 +300,200 @@ p {
   font-size: 8px;
 }
 
-.para{
+.para {
   position: absolute;
   top: 81%;
-  left: 37.5%;
+  left: 37%;
   width: 23vw;
   height: auto;
 }
 
-.para span{
+.para span {
   font-size: 12px;
 }
 
-
-.third{
+.third {
   margin: 5px;
+}
+
+.sidebar {
+  width: 215px;
+}
+
+.search-bar {
+  background: #16181c;
+  padding: 8px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.search-bar span {
+  font-size: 15px;
+  padding-left: 4px;
+  color: gray;
+}
+
+.search-bar input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 10px;
+}
+
+.search-bar input::placeholder {
+  color: gray;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.media-grid img {
+  width: 100%;
+  border-radius: 8px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.card {
+  background: #16181c;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card strong {
+  font-size: 10px;
+}
+
+.live-item {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  margin: 8px;
+}
+
+.live-item .avatars {
+  display: flex;
+  align-items: center;
+  margin: 8px;
+  border: 2px solid #6b51e3;
+  border-radius: 2rem;
+  padding: 3px;
+  background-color: black;
+}
+
+.live-item .avatars img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  margin-left: -5px;
+}
+
+.live-item strong {
+  font-size: 10px;
+}
+
+.live-item span {
+  padding: 3px 8px;
+  border-radius: 15px;
+  font-size: 10px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.profile-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name small {
+  color: gray;
+}
+
+.follow-btn {
+  background: white;
+  color: black;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.show-more {
+  color: #1d9bf0;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.my-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.my-profile-info {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.my-profile img {
+  object-fit: cover;
+  margin: 3px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.my-profile-name {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.my-profile-name small {
+  color: gray;
+}
+
+.follow-dot {
+  color: rgb(255, 255, 255);
+  padding: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
 }
